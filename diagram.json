@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "author": "Majdi Karim",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 162.01, "left": 84.66, "attrs": {} },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -193.33,
+      "left": 4.67,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 82.68,
+      "left": -289.33,
+      "attrs": { "background": "blue", "color": "black" }
+    }
+  ],
+  "connections": [
+    [ "keypad1:R1", "uno:9", "green", [ "v0" ] ],
+    [ "keypad1:R2", "uno:8", "green", [ "v0" ] ],
+    [ "keypad1:R3", "uno:7", "green", [ "v0" ] ],
+    [ "keypad1:R4", "uno:6", "green", [ "v0" ] ],
+    [ "keypad1:C1", "uno:5", "green", [ "v0" ] ],
+    [ "keypad1:C2", "uno:4", "green", [ "v0" ] ],
+    [ "keypad1:C3", "uno:3", "green", [ "v0" ] ],
+    [ "keypad1:C4", "uno:2", "green", [ "v0" ] ],
+    [ "lcd1:VSS", "uno:GND.1", "green", [ "v0" ] ],
+    [ "lcd1:VDD", "uno:5V", "green", [ "v0" ] ],
+    [ "lcd1:RS", "uno:12", "green", [ "v0" ] ],
+    [ "lcd1:RW", "uno:GND.1", "green", [ "v0" ] ],
+    [ "lcd1:E", "uno:11", "green", [ "v0" ] ],
+    [ "lcd1:K", "uno:5V", "green", [ "v0" ] ],
+    [ "lcd1:A", "uno:GND.1", "green", [ "v0" ] ],
+    [ "lcd1:D4", "uno:A0", "green", [ "v0" ] ],
+    [ "lcd1:D5", "uno:A1", "green", [ "v0" ] ],
+    [ "lcd1:D6", "uno:A2", "green", [ "v0" ] ],
+    [ "lcd1:D7", "uno:A3", "green", [ "v0" ] ]
+  ]
+}
